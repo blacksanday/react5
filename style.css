@@ -2,13 +2,15 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #63dada;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #75fdfd;
+    color: #000;
     text-align: center;
+    padding: 1rem 2rem;
+    border: 3px solid #000;
     padding: 1em 0;
 }
 
@@ -16,35 +18,40 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #63dada;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label, select {
+aside {
+    max-width: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #63dada;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.aside-container {
+    position: absolute;
+    top: 120px; /* 適切な値に調整してください */
+    margin-left: 20px;
+}
+
+main {
+    position: relative; /* mainを相対位置指定することでabsolute要素の基準になります */
+}
+
+label,
+select {
     font-size: 16px;
     margin-bottom: 10px;
     display: block;
 }
 
-button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
 
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #333;
+    background-color: #4c9f9f;
     color: #fff;
     position: fixed;
     bottom: 0;
@@ -55,3 +62,4 @@ p {
     font-size: 18px;
     margin-bottom: 15px;
 }
+
