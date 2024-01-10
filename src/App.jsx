@@ -34,6 +34,11 @@ export default function App() {
         fetchData();
     }, [selectedCountry, selectedCurrencies]);
 
+
+
+
+
+
     const intervalId = setInterval(() => {
         fetchData();
     }, 600000);
@@ -42,7 +47,10 @@ export default function App() {
         setSelectedCountry(event.target.value);
     };
 
+    const handleCurrencyChange = (event) => {
     
+        setSelectedCurrencies(selected);
+    };
 
     const calculateRateChange = (currency, currentRate, previousRate) => {
         if (currentRate && previousRate) {
